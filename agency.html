@@ -11,6 +11,7 @@
       href="Images/Home/CALART_Studios_Logo_New.png"
     />
     <link rel="stylesheet" href="css/index.css" />
+    <script src="js/index.js" defer></script>
   </head>
   <body>
     <header class="page-width site-header">
@@ -23,34 +24,95 @@
         />
       </a>
       <nav class="nav">
-        <a class="nav-item" href="/">Home</a>
-        <a class="nav-item" href="/project.html">Projects</a>
-        <a class="nav-item" href="/agency.html">Agency</a>
-        <a class="nav-item" href="/sustainability.html">Sustainibility</a>
-        <a class="nav-item" href="/blog.html">Blog</a>
-        <a class="nav-item" href="/contact.html">Contact</a>
-        <a class="nav-item" href="/search.html">
+        <a class="nav-item desktop-nav" href="/">Home</a>
+        <a class="nav-item desktop-nav" href="/project.html">Projects</a>
+        <a class="nav-item desktop-nav" href="/agency.html">Agency</a>
+        <a class="nav-item desktop-nav" href="/sustainability.html"
+          >Sustainibility</a
+        >
+        <a class="nav-item desktop-nav" href="/contact.html">Contact</a>
+        <a class="nav-item toogle-sidebar desktop-hide" href="#">
           <svg
+            height="50"
+            version="1.1"
+            id="Capa_1"
             xmlns="http://www.w3.org/2000/svg"
-            fill="#000000"
-            viewBox="0 0 50 50"
-            class="nav-item-svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px"
+            y="0px"
+            viewBox="0 0 384.97 384.97"
+            style="enable-background: new 0 0 384.97 384.97"
+            xml:space="preserve"
           >
-            <path
-              d="M 21 3 C 11.601563 3 4 10.601563 4 20 C 4 29.398438 11.601563 37 21 37 C 24.355469 37 27.460938 36.015625 30.09375 34.34375 L 42.375 46.625 L 46.625 42.375 L 34.5 30.28125 C 36.679688 27.421875 38 23.878906 38 20 C 38 10.601563 30.398438 3 21 3 Z M 21 7 C 28.199219 7 34 12.800781 34 20 C 34 27.199219 28.199219 33 21 33 C 13.800781 33 8 27.199219 8 20 C 8 12.800781 13.800781 7 21 7 Z"
-            />
+            <g>
+              <g id="Menu_1_">
+                <path
+                  d="M12.03,120.303h360.909c6.641,0,12.03-5.39,12.03-12.03c0-6.641-5.39-12.03-12.03-12.03H12.03
+			c-6.641,0-12.03,5.39-12.03,12.03C0,114.913,5.39,120.303,12.03,120.303z"
+                />
+                <path
+                  d="M372.939,180.455H12.03c-6.641,0-12.03,5.39-12.03,12.03s5.39,12.03,12.03,12.03h360.909c6.641,0,12.03-5.39,12.03-12.03
+			S379.58,180.455,372.939,180.455z"
+                />
+                <path
+                  d="M372.939,264.667H132.333c-6.641,0-12.03,5.39-12.03,12.03c0,6.641,5.39,12.03,12.03,12.03h240.606
+			c6.641,0,12.03-5.39,12.03-12.03C384.97,270.056,379.58,264.667,372.939,264.667z"
+                />
+              </g>
+            </g>
           </svg>
         </a>
-        <!-- <a class="nav-item" href="#">
-          <span class="higher-line"></span>
-          <span class="lower-line"></span>
-        </a> -->
       </nav>
+      <div class="mobile-sidebar">
+        <div class="sidebar-header">
+          <a
+            href="#"
+            style="display: table-cell; vertical-align: middle"
+            class="toogle-sidebar"
+          >
+            <svg
+              height="30"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              version="1.1"
+              id="Capa_1"
+              x="0px"
+              y="0px"
+              viewBox="0 0 512.001 512.001"
+              style="enable-background: new 0 0 512.001 512.001"
+              xml:space="preserve"
+            >
+              <g>
+                <g>
+                  <path
+                    d="M284.286,256.002L506.143,34.144c7.811-7.811,7.811-20.475,0-28.285c-7.811-7.81-20.475-7.811-28.285,0L256,227.717    L34.143,5.859c-7.811-7.811-20.475-7.811-28.285,0c-7.81,7.811-7.811,20.475,0,28.285l221.857,221.857L5.858,477.859    c-7.811,7.811-7.811,20.475,0,28.285c3.905,3.905,9.024,5.857,14.143,5.857c5.119,0,10.237-1.952,14.143-5.857L256,284.287    l221.857,221.857c3.905,3.905,9.024,5.857,14.143,5.857s10.237-1.952,14.143-5.857c7.811-7.811,7.811-20.475,0-28.285    L284.286,256.002z"
+                  />
+                </g>
+              </g>
+            </svg>
+          </a>
+        </div>
+        <div class="sidebar-body">
+          <nav class="mobile-nav">
+            <a class="mobile-nav-item" href="/">Home</a>
+            <a class="mobile-nav-item" href="/project.html">Projects</a>
+            <a class="mobile-nav-item" href="/agency.html">Agency</a>
+            <a class="mobile-nav-item" href="/sustainability.html"
+              >Sustainibility</a
+            >
+            <a class="mobile-nav-item" href="/contact.html">Contact</a>
+          </nav>
+        </div>
+      </div>
     </header>
 
     <main>
       <div class="hero-with-button-section">
-        <img src="images/Agency/agency_header.jpg" alt="Projects" />
+        <img
+          class="hero-image"
+          src="images/Agency/agency_header.jpg"
+          alt="Projects"
+        />
         <h3 class="hero-button custom-agency-button">Our Agency</h3>
       </div>
 
@@ -123,7 +185,10 @@
             <div class="agency-flex-item">
               <img src="images/Home/phone Kopie.jpg" alt="phone Kopie" />
             </div>
-            <div class="agency-flex-item" style="text-align: left">
+            <div
+              class="agency-flex-item agency-mobile-align"
+              style="text-align: left"
+            >
               <h2 class="text-title contact-heading">
                 art is connection.<br />Let's keep in touch.
               </h2>
@@ -148,22 +213,22 @@
 
         <div class="flex-container">
           <div class="flex-item">
-            <div style="margin: 40px 0" class="text-center">
+            <div style="margin: 30px 0" class="text-center">
               <a class="text-link" href="/contact.html">Contact us</a>
             </div>
-            <div style="margin: 40px 0" class="text-center">
+            <div style="margin: 30px 0" class="text-center">
               <a class="text-link" href="/project.html">SEE OUR PROJECTS</a>
             </div>
           </div>
           <div class="flex-item text-center">
             <img
               class="footer-logo"
-              src="/images/Home/CALART_Studios_Logo_New.png"
+              src="/images/Home/unnamed.png"
               alt="footer logo"
             />
           </div>
           <div class="flex-item">
-            <p class="newsletter">
+            <p class="newsletter mobile-text-center">
               Join our newsletter for design freebies, educational content about
               environment and to stay in
             </p>

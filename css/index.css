@@ -41,7 +41,7 @@ body {
   flex-direction: row;
   align-items: center;
   padding-top: 10px !important;
-  padding-bottom: 10px;
+  padding-bottom: 10px !important;
 }
 
 .site-header .header-logo {
@@ -306,7 +306,6 @@ body {
 .custom-flex-container,
 .agency-flex-container {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
   gap: 3.33%;
@@ -330,6 +329,7 @@ body {
 
 .custom-flex-container {
   gap: 5%;
+  flex-wrap: wrap;
 }
 
 .agency-flex-container {
@@ -420,7 +420,6 @@ body {
   text-transform: uppercase;
   letter-spacing: 10px;
   font-family: "JosefinSans-Light";
-  transform: translateY(-100%);
 }
 
 #contact-form label {
@@ -458,7 +457,87 @@ body {
   letter-spacing: 10px;
 }
 
+header .mobile-sidebar {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  left: -100%;
+  transition: 0.5s all linear;
+  background: #a3b8af;
+  z-index: 9;
+}
+
+.mobile-sidebar .sidebar-header {
+  height: 15%;
+  padding: 15px;
+  box-sizing: border-box;
+  display: table;
+  margin-left: auto;
+  margin-right: 25px;
+}
+
+.mobile-nav .mobile-nav-item:active {
+  color: white;
+}
+
+.toogle-sidebar span {
+  width: 50px;
+  border-bottom: 4px solid #000;
+}
+
+.mobile-sidebar .sidebar-header .toogle-close {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.mobile-sidebar .sidebar-body {
+  height: 85%;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.mobile-nav .mobile-nav-item {
+  display: block;
+  font-family: JosefinSans-Regular;
+  color: #000;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px 15px;
+  font-size: 25px;
+  margin: 20px;
+  text-align: center;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+footer .text-link {
+  display: block;
+}
+
+.hover-class {
+  transform: translateY(-100%);
+}
+
+.desktop-hide {
+  display: none;
+}
+
+.sustainibility .flex-container {
+  flex-wrap: wrap;
+}
+
 @media (max-width: 767px) {
+  .desktop-hide {
+    display: contents;
+  }
+
+  .team-member-name {
+    font-size: 13px;
+  }
+
   .page-width {
     padding: 0 20px;
   }
@@ -498,5 +577,80 @@ body {
 
   .hero-button {
     padding: 20px;
+    margin: 0;
+    bottom: 15px;
+    width: fit-content;
+    text-align: center;
+  }
+
+  .text-title {
+    margin: 0;
+    text-align: center;
+  }
+
+  .richtext-details {
+    margin-top: 0;
+  }
+
+  .hero-image {
+    aspect-ratio: 4/4;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .agency-flex-item {
+    padding: 15px 0;
+  }
+
+  .agency-mobile-align {
+    transform: translateY(40px);
+  }
+
+  header .desktop-nav {
+    display: none;
+  }
+
+  .mobile-text-center {
+    text-align: center;
+  }
+
+  .mobile-sidebar.active {
+    left: 0% !important;
+  }
+
+  .hover-class {
+    transform: translateY(-300%);
+  }
+
+  .agency-mobile-align .text-link {
+    display: block;
+    width: fit-content;
+    margin: 10px auto;
+  }
+
+  .site-footer .newsletter {
+    text-align: center;
+  }
+
+  .custom-flex-container {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .index-section-gradient-projects {
+    padding-top: 0;
+    margin-top: -15px;
+    background: linear-gradient(
+      to bottom,
+      #a3b8af 10%,
+      transparent 10% 40%,
+      transparent 40% 60%,
+      transparent 60% 80%,
+      transparent 80%
+    );
+  }
+
+  .contact-info {
+    padding-top: 0;
   }
 }
